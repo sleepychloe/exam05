@@ -6,7 +6,7 @@
 /*   By: yhwang <yhwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 03:50:14 by yhwang            #+#    #+#             */
-/*   Updated: 2023/05/02 06:52:37 by yhwang           ###   ########.fr       */
+/*   Updated: 2023/05/03 21:58:21 by yhwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,16 @@ void	Warlock::forgetSpell(std::string spell)
 
 void	Warlock::launchSpell(std::string spell, const ATarget& target)
 {
-	this->book.createSpell(spell)->launch(target);
+	ASpell*		spell_clone = this->book.createSpell(spell);
+	ATarget*	target_clone = target.clone();
+	
+	if (spell_clone == NULL || target_clone == NULL)
+	{
+		if (target_clone != NULL)
+			delete (target_clone);
+		return ;
+	}
+	delete (target_clone);
+
+	spell_clone->launch(target);
 }

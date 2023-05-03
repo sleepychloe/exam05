@@ -6,7 +6,7 @@
 /*   By: yhwang <yhwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 06:15:15 by yhwang            #+#    #+#             */
-/*   Updated: 2023/05/02 06:53:21 by yhwang           ###   ########.fr       */
+/*   Updated: 2023/05/03 21:55:19 by yhwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,12 @@ SpellBook::~SpellBook()
 
 void	SpellBook::learnSpell(ASpell* spell)
 {
+	for (std::vector<ASpell* >::iterator iter = this->book.begin();
+		iter != book.end() && *iter != NULL; iter++)
+	{
+		if ((*iter)->getName() == spell->getName())
+			return ;
+	}
 	this->book.push_back(spell->clone());
 }
 
@@ -37,6 +43,7 @@ void	SpellBook::forgetSpell(std::string const& spell)
 		{
 			delete (*iter);
 			*iter = NULL;
+			return ;
 		}
 	}
 }
