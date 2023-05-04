@@ -6,7 +6,7 @@
 /*   By: yhwang <yhwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 06:32:09 by yhwang            #+#    #+#             */
-/*   Updated: 2023/05/02 06:46:07 by yhwang           ###   ########.fr       */
+/*   Updated: 2023/05/04 00:51:56 by yhwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,13 @@ void	TargetGenerator::learnTargetType(ATarget* target)
 void	TargetGenerator::forgetTargetType(std::string const& type)
 {
 	for (std::vector<ATarget* >::iterator iter = this->target.begin();
-		iter != target.end() && *iter != NULL; iter++)
+		iter != target.end(); iter++)
 	{
 		if (type == (*iter)->getType())
 		{
 			delete (*iter);
-			*iter = NULL;
+			this->target.erase(iter);
+			return ;
 		}
 	}
 }
@@ -44,12 +45,10 @@ void	TargetGenerator::forgetTargetType(std::string const& type)
 ATarget*	TargetGenerator::createTarget(std::string const& type)
 {
 	for (std::vector<ATarget* >::iterator iter = this->target.begin();
-		iter != target.end() && *iter != NULL; iter++)
+		iter != target.end(); iter++)
 	{
 		if (type == (*iter)->getType())
-		{
 			return (*iter);
-		}
 	}
-	return (NULL);
+	return (NULL);	
 }

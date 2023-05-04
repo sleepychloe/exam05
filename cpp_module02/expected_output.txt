@@ -1,0 +1,187 @@
+TEST_01
+Richard: This looks like another boring day.
+Richard: I am Richard, Hello, I'm Richard the Warlock!!
+Inconspicuous Red-brick Wall has been turned into a critter!
+Inconspicuous Red-brick Wall has been burnt to a crisp!
+Richard: My job here is done!
+
+
+TEST_02
+Chick: This looks like another boring day.
+* introducing myself! *
+Chick: I am Chick, the cutest!
+
+* introducing myself after changing title! *
+Chick: I am Chick, the cutest baby chick!
+
+* launching spell without learning anything *
+spell name: Fwoosh    , target: rabbit  | 
+spell name: Fireball  , target: rabbit  | 
+spell name: Polymorph , target: rabbit  | 
+spell name: Fwoosh    , target: turtle  | 
+spell name: Fireball  , target: turtle  | 
+spell name: Polymorph , target: turtle  | 
+spell name: Fwoosh    , target: frog    | 
+spell name: Fireball  , target: frog    | 
+spell name: Polymorph , target: frog    | 
+spell name: Fwoosh    , target: shark   | 
+spell name: Fireball  , target: shark   | 
+spell name: Polymorph , target: shark   | 
+
+* learning spell chickchick(spell name: Fwoosh) *
+
+* learning spell rabbittail(spell name: Fwoosh) *
+
+* learning spell turtleturtle(spell name: Fireball) *
+
+* learning spell frogfrog(spell name: Fireball) *
+
+* learning spell sharkshark(spell name: Fireball) *
+
+* learning spell meowmeow(spell name: Polymorph) *
+
+* learning spell mimimimimi(spell name: Polymorph) *
+
+* launching spell *
+spell name: Fwoosh    , target: rabbit  | Target Practice Dummy has been fwooshed!
+spell name: Fireball  , target: rabbit  | Target Practice Dummy has been burnt to a crisp!
+spell name: Polymorph , target: rabbit  | Target Practice Dummy has been turned into a critter!
+spell name: Fwoosh    , target: turtle  | Target Practice Dummy has been fwooshed!
+spell name: Fireball  , target: turtle  | Target Practice Dummy has been burnt to a crisp!
+spell name: Polymorph , target: turtle  | Target Practice Dummy has been turned into a critter!
+spell name: Fwoosh    , target: frog    | Inconspicuous Red-brick Wall has been fwooshed!
+spell name: Fireball  , target: frog    | Inconspicuous Red-brick Wall has been burnt to a crisp!
+spell name: Polymorph , target: frog    | Inconspicuous Red-brick Wall has been turned into a critter!
+spell name: Fwoosh    , target: shark   | Inconspicuous Red-brick Wall has been fwooshed!
+spell name: Fireball  , target: shark   | Inconspicuous Red-brick Wall has been burnt to a crisp!
+spell name: Polymorph , target: shark   | Inconspicuous Red-brick Wall has been turned into a critter!
+
+* forgetting spell(spell name: Fwoosh) *
+
+* forgetting spell(spell name: Fwoosh) again *
+
+* forgetting spell(spell name: Fireball) *
+
+* forgetting spell(spell name: Fireball) again *
+
+* forgetting spell(spell name: Fireball) again *
+
+* forgetting spell(spell name: Polymorph) *
+
+* launching spell *
+spell name: Fwoosh    , target: rabbit  | 
+spell name: Fireball  , target: rabbit  | 
+spell name: Polymorph , target: rabbit  | Target Practice Dummy has been turned into a critter!
+spell name: Fwoosh    , target: turtle  | 
+spell name: Fireball  , target: turtle  | 
+spell name: Polymorph , target: turtle  | Target Practice Dummy has been turned into a critter!
+spell name: Fwoosh    , target: frog    | 
+spell name: Fireball  , target: frog    | 
+spell name: Polymorph , target: frog    | Inconspicuous Red-brick Wall has been turned into a critter!
+spell name: Fwoosh    , target: shark   | 
+spell name: Fireball  , target: shark   | 
+spell name: Polymorph , target: shark   | Inconspicuous Red-brick Wall has been turned into a critter!
+
+* forgetting spell(spell name: Polymorph) again *
+
+* launching spell *
+spell name: Fwoosh    , target: rabbit  | 
+spell name: Fireball  , target: rabbit  | 
+spell name: Polymorph , target: rabbit  | 
+spell name: Fwoosh    , target: turtle  | 
+spell name: Fireball  , target: turtle  | 
+spell name: Polymorph , target: turtle  | 
+spell name: Fwoosh    , target: frog    | 
+spell name: Fireball  , target: frog    | 
+spell name: Polymorph , target: frog    | 
+spell name: Fwoosh    , target: shark   | 
+spell name: Fireball  , target: shark   | 
+spell name: Polymorph , target: shark   | 
+
+TEST TARGET GENERATOR
+
+* learning spell rabbittail(spell name: Fwoosh) *
+
+* learning spell sharkshark(spell name: Fireball) *
+
+* learning spell mimimimimi(spell name: Polymorph) *
+
+* creating target(target name: meow) without learning anything *
+
+* creating target(target name: mimi) without learning anything *
+
+* launching spell without learning any target *
+spell name: Fwoosh    , target: meow    | 
+spell name: Fireball  , target: meow    | 
+spell name: Polymorph , target: meow    | 
+spell name: Fwoosh    , target: mimi    | 
+spell name: Fireball  , target: mimi    | 
+spell name: Polymorph , target: mimi    | 
+
+* learning target rabbit(target type: Target Practice Dummy) *
+
+* learning target frog(target type: Inconspicuous Red-brick Wall) *
+
+* creating target(target name: meow, target type: arget Practice Dummy) *
+
+* creating target(target name: mimi, target type: Inconspicuous Red-brick Wall) *
+
+* launching spell *
+spell name: Fwoosh    , target: meow    | Target Practice Dummy has been fwooshed!
+spell name: Fireball  , target: meow    | Target Practice Dummy has been burnt to a crisp!
+spell name: Polymorph , target: meow    | Target Practice Dummy has been turned into a critter!
+spell name: Fwoosh    , target: mimi    | Inconspicuous Red-brick Wall has been fwooshed!
+spell name: Fireball  , target: mimi    | Inconspicuous Red-brick Wall has been burnt to a crisp!
+spell name: Polymorph , target: mimi    | Inconspicuous Red-brick Wall has been turned into a critter!
+
+* forgetting target(target type: Target Practice Dummy) *
+
+* creating target(target name: meow, target type: arget Practice Dummy) *
+
+* creating target(target name: mimi, target type: Inconspicuous Red-brick Wall) *
+
+* launching spell *
+spell name: Fwoosh    , target: meow    | 
+spell name: Fireball  , target: meow    | 
+spell name: Polymorph , target: meow    | 
+spell name: Fwoosh    , target: mimi    | Inconspicuous Red-brick Wall has been fwooshed!
+spell name: Fireball  , target: mimi    | Inconspicuous Red-brick Wall has been burnt to a crisp!
+spell name: Polymorph , target: mimi    | Inconspicuous Red-brick Wall has been turned into a critter!
+
+* forgetting target(target type: Inconspicuous Red-brick Wall) *
+
+* creating target(target name: meow, target type: arget Practice Dummy) *
+
+* creating target(target name: mimi, target type: Inconspicuous Red-brick Wall) *
+
+* launching spell *
+spell name: Fwoosh    , target: meow    | 
+spell name: Fireball  , target: meow    | 
+spell name: Polymorph , target: meow    | 
+spell name: Fwoosh    , target: mimi    | 
+spell name: Fireball  , target: mimi    | 
+spell name: Polymorph , target: mimi    | 
+
+* forgetting spell(spell name: Fwoosh) *
+
+* forgetting spell(spell name: Fwoosh) again *
+
+* forgetting spell(spell name: Fireball) *
+
+* forgetting spell(spell name: Polymorph) *
+
+* launching spell *
+spell name: Fwoosh    , target: rabbit  | 
+spell name: Fireball  , target: rabbit  | 
+spell name: Polymorph , target: rabbit  | 
+spell name: Fwoosh    , target: turtle  | 
+spell name: Fireball  , target: turtle  | 
+spell name: Polymorph , target: turtle  | 
+spell name: Fwoosh    , target: frog    | 
+spell name: Fireball  , target: frog    | 
+spell name: Polymorph , target: frog    | 
+spell name: Fwoosh    , target: shark   | 
+spell name: Fireball  , target: shark   | 
+spell name: Polymorph , target: shark   | 
+
+Chick: My job here is done!

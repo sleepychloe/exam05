@@ -6,7 +6,7 @@
 /*   By: yhwang <yhwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 03:50:14 by yhwang            #+#    #+#             */
-/*   Updated: 2023/05/03 22:10:51 by yhwang           ###   ########.fr       */
+/*   Updated: 2023/05/04 00:24:24 by yhwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ Warlock::Warlock(const std::string &name, const std::string &title)
 Warlock::~Warlock()
 {
 	for (std::vector<ASpell *>::iterator iter = this->spell.begin();
-		iter != this->spell.end() && *iter != NULL; iter++)
+		iter != this->spell.end(); iter++)
 		delete (*iter);
 	std::cout << this->name << ": My job here is done!\n";
 }
@@ -49,24 +49,18 @@ void	Warlock::introduce(void) const
 
 void	Warlock::learnSpell(ASpell* spell)
 {
-	for (std::vector<ASpell *>::iterator iter = this->spell.begin();
-		iter != this->spell.end() && *iter != NULL; iter++)
-	{
-		if ((*iter)->getName() == spell->getName())
-			return ;
-	}
 	this->spell.push_back(spell->clone());
 }
 
 void	Warlock::forgetSpell(std::string spell)
 {
 	for (std::vector<ASpell *>::iterator iter = this->spell.begin();
-		iter != this->spell.end() && *iter != NULL; iter++)
+		iter != this->spell.end(); iter++)
 	{
 		if ((*iter)->getName() == spell)
 		{
 			delete (*iter);
-			*iter = NULL;
+			this->spell.erase(iter);
 			return ;
 		}
 	}
@@ -75,12 +69,13 @@ void	Warlock::forgetSpell(std::string spell)
 void	Warlock::launchSpell(std::string spell, const ATarget& target)
 {
 	ATarget*	target_clone = target.clone();
+
 	if (target_clone == NULL)
 		return ;
 	delete (target_clone);
 
 	for (std::vector<ASpell *>::iterator iter = this->spell.begin();
-		iter != this->spell.end() && *iter != NULL; iter++)
+		iter != this->spell.end(); iter++)
 	{
 		if ((*iter)->getName() == spell)
 		{

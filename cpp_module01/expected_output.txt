@@ -1,0 +1,55 @@
+TEST_01
+Richard: This looks like another boring day.
+Richard: I am Richard, the Titled!
+Target Practice Dummy has been fwooshed!
+Richard: My job here is done!
+
+
+TEST_02
+Chick: This looks like another boring day.
+* introducing myself! *
+Chick: I am Chick, the cutest!
+
+* launching spell without learning anything *
+target: rabbit  | 
+target: turtle  | 
+
+* forgetting spell(spell name Fwoosh) without learning anything *
+
+* learning spell chickchick(spell name: Fwoosh) *
+
+* launching spell *
+target: rabbit  | Target Practice Dummy has been fwooshed!
+target: rabbit  | Target Practice Dummy has been fwooshed!
+target: turtle  | Target Practice Dummy has been fwooshed!
+target: turtle  | Target Practice Dummy has been fwooshed!
+
+* launching spell(spell name: rabbit) that chick has not learnt *
+target: rabbit  | 
+target: turtle  | 
+
+* learning spell chickchick(spell name: Fwoosh) again *
+
+* launching spell *
+target: rabbit  | Target Practice Dummy has been fwooshed!
+target: turtle  | Target Practice Dummy has been fwooshed!
+
+* forgetting spell(spell name: turtle) *
+
+* forgetting spell(spell name empty) *
+
+* forgetting spell(spell name: Fwoosh)*
+
+* launching spell *
+target: rabbit  | Target Practice Dummy has been fwooshed!
+target: turtle  | Target Practice Dummy has been fwooshed!
+
+* forgetting spell(spell name Fwoosh) again: forgot everything *
+
+* launching spell *
+target: rabbit  | 
+target: turtle  | 
+
+* forgetting spell(spell name: Fwoosh) again *
+
+Chick: My job here is done!
