@@ -6,7 +6,7 @@
 /*   By: yhwang <yhwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 22:54:19 by yhwang            #+#    #+#             */
-/*   Updated: 2023/05/04 02:12:01 by yhwang           ###   ########.fr       */
+/*   Updated: 2023/05/04 21:14:06 by yhwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -213,6 +213,7 @@ int main(int argc, char **argv)
 		std::cout << std::endl;
 		std::cout << "spell name: Polymorph , target: rabbit\t| ";
 		chick.launchSpell("Polymorph", rabbit);
+		std::cout << std::endl;
 		std::cout << "spell name: Fwoosh    , target: turtle\t| ";
 		chick.launchSpell("Fwoosh", turtle);
 		std::cout << std::endl;
@@ -221,6 +222,7 @@ int main(int argc, char **argv)
 		std::cout << std::endl;
 		std::cout << "spell name: Polymorph , target: turtle\t| ";
 		chick.launchSpell("Polymorph", turtle);
+		std::cout << std::endl;
 		std::cout << "spell name: Fwoosh    , target: frog\t| ";
 		chick.launchSpell("Fwoosh", frog);
 		std::cout << std::endl;
@@ -229,6 +231,7 @@ int main(int argc, char **argv)
 		std::cout << std::endl;
 		std::cout << "spell name: Polymorph , target: frog\t| ";
 		chick.launchSpell("Polymorph", frog);
+		std::cout << std::endl;
 		std::cout << "spell name: Fwoosh    , target: shark\t| ";
 		chick.launchSpell("Fwoosh", shark);
 		std::cout << std::endl;
@@ -237,6 +240,7 @@ int main(int argc, char **argv)
 		std::cout << std::endl;
 		std::cout << "spell name: Polymorph , target: shark\t| ";
 		chick.launchSpell("Polymorph", shark);
+		std::cout << std::endl;
 		std::cout << std::endl;
 
 		std::cout << YELLOW << "* forgetting spell(spell name: Polymorph) again *" << BLACK << std::endl;

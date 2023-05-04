@@ -6,7 +6,7 @@
 /*   By: yhwang <yhwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 03:50:14 by yhwang            #+#    #+#             */
-/*   Updated: 2023/05/04 00:24:24 by yhwang           ###   ########.fr       */
+/*   Updated: 2023/05/04 21:09:30 by yhwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,12 @@ void	Warlock::introduce(void) const
 
 void	Warlock::learnSpell(ASpell* spell)
 {
+	for (std::vector<ASpell *>::iterator iter = this->spell.begin();
+		iter != this->spell.end(); iter++)
+	{
+		if (spell->getName() == (*iter)->getName())
+			return ;
+	}
 	this->spell.push_back(spell->clone());
 }
 

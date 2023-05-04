@@ -71,16 +71,16 @@ spell name: Polymorph , target: shark   | Inconspicuous Red-brick Wall has been 
 * launching spell *
 spell name: Fwoosh    , target: rabbit  | 
 spell name: Fireball  , target: rabbit  | 
-spell name: Polymorph , target: rabbit  | Target Practice Dummy has been turned into a critter!
+spell name: Polymorph , target: rabbit  | 
 spell name: Fwoosh    , target: turtle  | 
 spell name: Fireball  , target: turtle  | 
-spell name: Polymorph , target: turtle  | Target Practice Dummy has been turned into a critter!
+spell name: Polymorph , target: turtle  | 
 spell name: Fwoosh    , target: frog    | 
 spell name: Fireball  , target: frog    | 
-spell name: Polymorph , target: frog    | Inconspicuous Red-brick Wall has been turned into a critter!
+spell name: Polymorph , target: frog    | 
 spell name: Fwoosh    , target: shark   | 
 spell name: Fireball  , target: shark   | 
-spell name: Polymorph , target: shark   | Inconspicuous Red-brick Wall has been turned into a critter!
+spell name: Polymorph , target: shark   | 
 
 * forgetting spell(spell name: Polymorph) again *
 

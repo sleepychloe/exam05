@@ -41,8 +41,8 @@ target: turtle  | Target Practice Dummy has been fwooshed!
 * forgetting spell(spell name: Fwoosh)*
 
 * launching spell *
-target: rabbit  | Target Practice Dummy has been fwooshed!
-target: turtle  | Target Practice Dummy has been fwooshed!
+target: rabbit  | 
+target: turtle  | 
 
 * forgetting spell(spell name Fwoosh) again: forgot everything *
 
